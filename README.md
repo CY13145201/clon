@@ -1,16 +1,16 @@
 ### spring_boot_demo
 
-spring boot 经典学习案例大全
+ spring boot 经典学习案例大全
 
 ### 作者及博客
 
-QQ：949118693（邪客）
+ QQ：949118693（邪客）
 
-JAVA学习交流群：780509097
+ JAVA学习交流群：780509097
 
-![输入图片说明](https://gitee.com/uploads/images/2018/0616/091012_2e93400f_583593.png "Java技术交流群.png")
+ ![输入图片说明](https://gitee.com/uploads/images/2018/0616/091012_2e93400f_583593.png "Java技术交流群.png")
 
-博客：http://xieke90.iteye.com/
+ 博客：http://xieke90.iteye.com/
 
 ### 项目结构说明
 
@@ -26,4 +26,4 @@ JAVA学习交流群：780509097
 
 6. **springboottask：基于spring boot的定时任务使用案例** 
 
-后续持续更新...
+ 后续持续更新...
