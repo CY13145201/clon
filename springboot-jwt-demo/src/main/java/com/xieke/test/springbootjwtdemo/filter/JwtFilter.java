@@ -12,6 +12,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Date;
 
 public class JwtFilter extends GenericFilterBean {
 
@@ -41,10 +42,17 @@ public class JwtFilter extends GenericFilterBean {
             response.setStatus(HttpServletResponse.SC_OK);
             chain.doFilter(req, res);
         } else {
-            final String token = authHeader.substring(7);//前缀bearer;
+            if(authHeader==null||authHeader.equals("")){
+                throw new ServletException("认证失败！");
+            }
+            final String token = authHeader.substring(7);//前缀"bearer;"
             final Claims claims = JwtHelper.parseJWT(token,Const.BASE64_SECRET);
+            if(new Date().getTime()-claims.getExpiration().getTime()>0){
+                throw new ServletException("Token过期！");
+            }
             request.setAttribute(Const.CLAIMS, claims);
             chain.doFilter(req, res);
         }
     }
+
 }
