@@ -1,6 +1,5 @@
 package com.xieke.test.springbootshirodemo.config;
 
-
 import com.xieke.test.springbootshirodemo.entity.SysPermission;
 import com.xieke.test.springbootshirodemo.entity.SysRole;
 import com.xieke.test.springbootshirodemo.entity.UserInfo;
@@ -50,7 +49,7 @@ public class MyShiroRealm extends AuthorizingRealm {
             return null;
         }
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(
-                userInfo, //用户名
+                userInfo, //用户信息
                 userInfo.getPassword(), //密码
                 ByteSource.Util.bytes(userInfo.getCredentialsSalt()),//salt=username+salt
                 getName()  //realm name

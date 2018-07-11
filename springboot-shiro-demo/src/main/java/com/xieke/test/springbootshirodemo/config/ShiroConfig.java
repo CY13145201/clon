@@ -1,5 +1,6 @@
 package com.xieke.test.springbootshirodemo.config;
 
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -94,4 +95,11 @@ public class ShiroConfig {
 		//r.setWarnLogCategory("example.MvcLogger");     // No default
 		return r;
 	}
+
+
+	@Bean
+	public ShiroDialect shiroDialect() {
+		return new ShiroDialect();
+	}
+
 }
