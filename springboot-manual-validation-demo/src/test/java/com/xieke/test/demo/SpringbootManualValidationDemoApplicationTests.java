@@ -23,9 +23,6 @@ public class SpringbootManualValidationDemoApplicationTests {
 		user.setPassWord("786");
 		user.setEmail("9999.com");
 		System.err.println(ValidateUtils.valid(user));
-		// for (String error : list) {
-		// System.err.println(error);
-		// }
 	}
 
 }
