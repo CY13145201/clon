@@ -33,7 +33,7 @@ public class ValidateUtils {
 		Set<ConstraintViolation<T>> constraintViolations = validator.validate(obj);
 		List<String> messageList = new ArrayList<>();
 		for (ConstraintViolation<T> constraintViolation : constraintViolations) {
-			messageList.add(constraintViolation.getPropertyPath().toString() + constraintViolation.getMessage());
+			messageList.add(constraintViolation.getMessage());
 		}
 		return messageList;
 	}
