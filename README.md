@@ -52,4 +52,10 @@ Java技术交流群：780509097
 
 **19. springboot-startrun-demo：spring boot启动时执行特定服务使用案例** 
 
+**20. springboot-https-demo：spring boot配置https请求使用案例** 
+
+
+
 ### 后续持续更新...
+
+
