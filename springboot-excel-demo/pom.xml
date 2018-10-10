@@ -34,13 +34,13 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- xls（03版本）-->
+        <!-- xls（03版本）HSSFWorkbook -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <!-- xlsx（07及之后版本）-->
+        <!-- xlsx（07及之后版本）XSSFWorkbook -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
